@@ -1,0 +1,27 @@
+{
+  "name": "demo-node-app",
+  "version": "1.0.0",
+  "description": "A demo node app with some simple routes to display the data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanasif/demo-node-app.git"
+  },
+  "author": "Usman Asif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usmanasif/demo-node-app/issues"
+  },
+  "homepage": "https://github.com/usmanasif/demo-node-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
