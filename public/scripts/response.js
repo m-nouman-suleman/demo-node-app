@@ -3,14 +3,14 @@ function submitForm() {
     url: '/data',
     type: 'POST',
     data: {
-      "dataField": $("#data").val()
+      'dataField': $('#data').val()
     },
     success: function(result) {
-      var html = '<span>Response: ' + result.data + '</span>';
-      $("#response").html(html);
+      var html = `<span>Response: ${result.data}</span>`;
+      $('#response').html(html);
     },
     error: function (error) {
-      alert('error', error);
+      console.info('error', error);
     }
   });
 }
