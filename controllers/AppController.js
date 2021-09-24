@@ -1,4 +1,5 @@
 import reverseString from '../utils/reverseString.js';
+
 class AppController {
   async app(req, res) {
     res.sendFile('/app.html', { root: './public' });

@@ -10,17 +10,17 @@ class Server {
     this.routerConfig();
   }
 
-  config = () => {
+  config() {
     this.app.use(express.urlencoded({ extended:true }));
     this.app.use(express.json({ limit: '1mb' }));
     this.app.use(express.static('./public'));
   }
 
-  routerConfig = () => {
+  routerConfig() {
     this.app.use(appRouter);
   }
 
-  start = (port) => {
+  start(port) {
     return new Promise((resolve, reject) => {
       this.app.listen(port, () => {
         resolve(port);
