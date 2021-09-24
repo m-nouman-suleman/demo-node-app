@@ -5,7 +5,7 @@ class AppController {
   }
 
   async data(req, res) {
-    res.send({ status: 200, data: reverseString(req.body.dataField) });
+    res.status(200).json({ data: reverseString(req.body.dataField) });
   }
 }
 

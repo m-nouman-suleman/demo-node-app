@@ -4,19 +4,19 @@ import appRouter from './routers/AppRouter.js';
 class Server {
   app;
 
-  constructor () {
+  constructor() {
     this.app = express();
     this.config();
     this.routerConfig();
   }
 
-  config() {
+  config = () => {
     this.app.use(express.urlencoded({ extended:true }));
     this.app.use(express.json({ limit: '1mb' }));
     this.app.use(express.static('./public'));
   }
 
-  routerConfig () {
+  routerConfig = () => {
     this.app.use(appRouter);
   }
 
