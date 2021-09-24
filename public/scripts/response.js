@@ -1,16 +1,16 @@
-function submitForm() {
+function submitData() {
   $.ajax({
     url: '/data',
     type: 'POST',
     data: {
-      "dataField": $("#data").val()
+      'dataField': $('#dataField').val()
     },
     success: function(result) {
-      var html = '<span>Response: ' + result.data + '</span>';
-      $("#response").html(html);
+      var html = `Response: <span>${result.data}</span>`;
+      $('#response').html(html);
     },
     error: function (error) {
-      alert('error', error);
+      console.log('error', error);
     }
   });
 }

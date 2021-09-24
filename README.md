@@ -1,6 +1,6 @@
 ### Demo Node App
 
- Implemented the a node app using expressjs 
+ Implemented a simple node app using expressjs
 
 This simple app has the following features:
 - Make a GET request to the server endpoint and render an html file
